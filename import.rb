@@ -7,7 +7,7 @@ user = HealthGraph::User.new(token)
 # expects a .csv file with headers:
 # "Title","Start","End","Duration","Description"
 
-contents = File.open("/Users/andy/Desktop/export.csv", "rb").read
+contents = File.open("export.csv", "rb").read
 
 contents.split("\n").each do |line|
 
